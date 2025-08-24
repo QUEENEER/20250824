@@ -1,1 +1,33 @@
+#include <stdio.h>
+void cha(int arr[],int n){
+	for(int i=1;i<n;i++){
+		//TODO
+		int key=arr[i];
+		int j=i-1;
+		while(j>=0&&arr[j]>key){
+			//TODO
+			arr[j+1]=arr[j];
+			j=j-1;
+		}
+		arr[j+1]=key;
+	}
+}
+
+int main()
+{
+	int n;
+	int arr[n];
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		//TODO
+		scanf("%d",&arr[i]);
+	}
+	cha(arr,n);
+	for(int i=0;i<n;i++){
+		//TODO
+		printf("%d",arr[i]);
+	}
+	return 0;
+}
+
 
